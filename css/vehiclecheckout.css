@@ -174,9 +174,10 @@
     border-radius: 8px;
     width: 360px;
     height: 50px;
-    
-
+    cursor: pointer;
 }
+
+
 .loan-vechile{
     background-color:rgb(206, 221, 255);
     color:black;
@@ -342,6 +343,12 @@
     top: 5px;
     right: 5px;
     cursor: pointer; 
+}
+
+.seller-icon{
+    font-size: 30px;
+    padding: 40px 50px;
+
 }
 
 

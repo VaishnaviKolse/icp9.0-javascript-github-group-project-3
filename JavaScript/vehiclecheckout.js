@@ -1,10 +1,7 @@
 const slide = document.getElementById('cover-img');
-        const img = ["./../../img/vehiclecheckoutimg/vehicle1.jfif",
-                    "./../../img/vehiclecheckoutimg/v2.jfif",
-                    "./../../img/vehiclecheckoutimg/v3.jfif",
-                    "./../../img/vehiclecheckoutimg/v4.jfif",
-                    "./../../img/vehiclecheckoutimg/v5.jfif",
-                "./../../img/vehiclecheckoutimg/v6.jfif",];
+        const img = ["../../img/iPhone-13-Pro.png",
+                    "../../img/iphone-13-pro-photo -1.jpg",
+                    "../../img/iphone-13-pro-photo -2.jpg",];
         let index = 0;
 
         function next() {

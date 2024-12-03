@@ -125,27 +125,43 @@
   <div class="card">
     <form>
         
-        <input type="text"  Placeholder="Product Title" required class="Product-title"> <br/>
-        <input type="text"  Placeholder="Location" required class="Product-title"> <br/>
-        <input type="text"  Placeholder="Description" required class="Description"> <br/>
-        <input type="text"  Placeholder="Price (₹)" required class="Product-title"> <br/>
+        <input type="text"  Placeholder="Product Title" required class="Product-title" id="productTitle"> <br/>
+        <input type="text"  Placeholder="Location" required class="Product-title" id="productTitle"> <br/>
+        <input type="text"  Placeholder="Description" required class="Description" id="productTitle"> <br/>
+        <input type="text"  Placeholder="Price (₹)" required class="Product-title" id="productTitle"> <br/>
 
         <input type="file" class="file" placeholder="Choose File">
 
-        <button class="btn">Submit</button> <br/>
+        <button class="btn" onclick="addPost()">Submit</button> <br/>
         <button class="btn">Cancel</button>
-    
-    
-    
-    
-        
-
-       
-       
-    
+     
+    </form>
 
 </div>
+
+<form id="addPostText">
+    <div class="card2">
+        
+        
+       
+      </div>
+
+</form>
+
+
+
+
 <script>
+    function addPost(){
+        const userInput = document.getElementById('productTitle');
+        const productTitle = userInput.value;
+        localStorage.setItem('productTitle', productTitle );
+
+
+        const addPostText = document.getElementById('addPostText');
+        addPostText.innerText = `${userDetails}`;
+
+    }
 
 </script>
 

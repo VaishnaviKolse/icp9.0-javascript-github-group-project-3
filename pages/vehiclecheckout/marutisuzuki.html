@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../css/vehiclecheckout.css"/>
+    <link rel="stylesheet" href="./../../css/style.css"/>
+    <title>Maruti Suzuki Swift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+         
+          <div class="sidedar-container">
+    
+        <i class="fa-solid fa-bars menu-icon" id="menu-icon" onclick="openSideBar()"></i>
+        <div class="side-bar" id="side-bar">
+          <i class="fa-solid fa-xmark close-icon" onclick="closeIcon()"></i>
+    
+          <div class="item" id="first-item">
+            <i class="fa-solid fa-user icon-style"></i>
+            <h3 class="item-name">Profile</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-brands fa-sellsy icon-style"></i>
+            <h3 class="item-name">Start Selling</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-solid fa-credit-card icon-style"></i>
+            <h3 class="item-name">My ADS</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-solid fa-tag icon-style"></i>
+            <h3 class="item-name">Select Language</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-brands fa-rocketchat icon-style"></i>
+            <h3 class="item-name">Chats</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-solid fa-headset icon-style"></i>
+            <h3 class="item-name">Help</h3>
+          </div>
+    
+        </div>
+    
+          </div>
+    
+    
+            <div class="logo-box">
+                <h2 class="logo">EcoSwap</h2>
+            </div>
+            <div class="select-location-container">
+                <select name="select location" id="select-option">
+                    <option>Select Location</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Goa">Goa</option>
+                </select>
+            </div>
+            <div class="product-search-container">
+                <input type="text" class="product-search-input">
+                <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+            </div>
+            <div class="select-language-contaiiner">
+                <select id="select-language">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+            </div>
+    
+            <div class="product-sell-box">
+                <button class="sell-product-btn">
+                 <i class="fa-solid fa-plus sell-icon"></i>
+                    SELL
+                </button>
+            </div>
+    
+            <div class="user-profile">
+                <i class="fa-regular fa-user profile-img" ></i>
+            </div>
+            
+        </div>
+    
+        <!-- sub-navbar ----------------------------------------------------->
+    
+        <div class="sub-navbar">
+              <div class="navbar-pages-container">
+                <div class="vehicals-page">
+                    <p class="style-p"><a href="#" class="sub-nav-anchor">Vahicals : Bike <span class="in-product-style">& Car & Scooter</span></a></p>
+                </div>
+        
+                <div class="RealEtate-page">
+                    <p class="style-p"><a href="#" class="sub-nav-anchor">RealEtate : Houses<span class="in-product-style">& Apartments </span></a></p>
+                </div>
+        
+                <div class="Electronics-page">
+    
+                    
+                    <p class="style-p"><a href="#" class="sub-nav-anchor">Electronics : Smart Phone<span class="in-product-style"> & Laptop & Tablet</span></a></p>
+    
+                </div>
+              </div>
+        </div>
+    
+      </header>
+    
+
+    <div class="main-container">
+        <div class="img-container">
+            <img src="./../../img/vehiclecheckoutimg/maruitsuzukimain.jpg" id="cover-img"/>
+         </div>
+         <img src="./../../img/vehiclecheckoutimg/back-arrow.png" class="img-back img-same" onclick="back()"/>
+         <img src="./../../img/vehiclecheckoutimg/next-arrow.png" class="img-next img-same" onclick="next()"/>
+    
+    </div>
+
+    <div class="vehicle-description">
+        <div class="vehicle-div-1">
+            <div class="vehicle-subdiv1">
+                <div class="fearure-seller-div">
+                    <div class="featurev">
+                        <b>FEATURED</b>
+                    </div>
+                    <div class="verified-seller">
+                        <b> <img src="./../../img/vehiclecheckoutimg/user.png" class="verify-celler-png"/>VERIFED SELLER</b>
+                    </div>
+                </div>
+                <h1 class="car-name-h1">Maruti Suzuki Swift (2021)</h1>
+                <div class="petrol-auto-speed-container">
+                    <div class="petrol-auto-speed-png-sub">
+                        <img src="./../../img/vehiclecheckoutimg/petrol.png" class="petrol-auto-speed-png"/><p class="s-name">PETROL</p>
+                    </div>
+                    <div class="petrol-auto-speed-png-sub">
+                        <img src="./../../img/vehiclecheckoutimg/speed.png" class="petrol-auto-speed-png"/><p class="s-name">25,000 KM</p>
+                    </div>
+                    <div class="petrol-auto-speed-png-sub">
+                    <img src="./../../img/vehiclecheckoutimg/automation.png"class="petrol-auto-speed-png"/><p class="s-name">AUTOMATIC</p>
+                    </div>
+               
+                </div>
+                
+
+            </div>
+
+            <div class="vehicle-subdiv2">
+                <h1 class="main-desc">Overview</h1>
+                <hr/>
+                <div class="main-overview-container">
+                    <div class="Overview-cont">
+                        <div>      
+                        <img src="./../../img/vehiclecheckoutimg/ownervehicle.svg" class="overview-img"/>
+                        </div>
+                        <div>
+                            <p style="color:rgb(64,99,103)">Owner</p>
+                            <h3 style="color: #2c3e50">1st</h3>
+                        </div>
+                    </div>
+                    <div class="Overview-cont">
+                        <div>      
+                        <img src="./../../img/vehiclecheckoutimg/vehiclelocation.svg" class="overview-img"/>
+                        </div>
+                        <div>
+                            <p style="color:rgb(64,99,103)">Location</p>
+                            <h3 style="color: #2c3e50">Mumbai,<br>Maharashtra</h3>
+                        </div>
+
+                    </div>
+                    
+                    
+                    <div class="Overview-cont">
+                        <div>      
+                        <img src="./../../img/vehiclecheckoutimg/postingdatevehicle.svg" class="overview-img"/>
+                        </div>
+                        <div>
+                            <p style="color:rgb(64,99,103)">Posting Date</p>
+                            <h3 style="color: #2c3e50">4-OCT-23</h3>
+                        </div>
+
+                    </div>
+                </div>    
+                
+
+            </div>
+            <div class="vehicle-subdiv3">
+                <h1 class="main-desc">Description</h1>
+                <hr/>
+                <p class="v-description">
+                    
+                    ADDITIONAL VEHICLE INFORMATION:<br/>
+                    Accidental: No<br/>
+                    Alloy Wheels: Yes<br/>
+                    Battery Condition: New<br/>
+                    Vehicle Certified: Yes<br/>
+                    Color: Red<br/>
+                    Power steering: Yes<br/>
+                    Exchange: Yes<br/>
+                    Finance: Yes<br/>
+                    Tyre Condition: NewEngine Capacity/Displacement (in Cc): 1197<br/>
+                    Insurance Type: Comprehensive<br/>
+                    Make Month: November<br/>
+                    Power steering: Yes<br/>
+                    Power Windows: Front<br/>
+                    AM/FM Radio: Yes<br/>
+                    Registration Place: MP<br/>
+                    Exchange: Yes<br/>
+                    Finance: Yes<br/>
+                    Service History: Available<br/>
+                    Tyre Condition: Old<br/>
+                    USB Compatibility: Yes<br/>
+
+                </p>
+                
+            </div>
+           
+
+        </div>
+        <div class="vehicle-div-2">
+            <div class="vehicle-subdiv5">
+                <h1 class="price-vehicle">₹ 6,00,099.00</h1>
+                <button class="make-offer-btn"><b>Make Offer</b></button>
+                <div class="loan-vechile">
+                    <div class=""><img src="./../../img/vehiclecheckoutimg/money-bank.svg" class="money-bank"/></div>
+                   <div class="get-offer">Get Instant Loan.<b>Apply Now !</b></div>
+                </div>
+            </div>
+
+
+                <div class="vehicle-subdiv4">
+                    <div class="logo-name-cont">
+                        <div class="subdiv4-logo"><img src="./../../img/vehiclecheckoutimg/carlogo.avif" class="subdiv4-logo"/></div>
+                        <h2 class="logo-name-cont-2">Sachdeva Motors</h2>
+                        <a href="https://g.co/kgs/X9dvMkT"><img src="./../../img/vehiclecheckoutimg/next2.png" style="height: 40px; margin-left: 20px; margin-top: 40px;"/></a>
+                    </div>
+                    <div>
+                        <button class="chat-with-seller" onclick="openModel('message')"><b>Chat with seller</b></button>
+                    </div>
+              </div>
+    
+                
+
+            <div class="vehicle-subdiv6">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223895.04356658066!2d77.13553934229687!3d28.738665023073732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03e8eb96460d%3A0xcd025d9366794b57!2sSharda%20Niketan%2C%20Pitampura%2C%20Delhi%2C%20110034!5e0!3m2!1sen!2sin!4v1732972596278!5m2!1sen!2sin" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+    </div>
+
+
+
+
+
+    
+    <div class="overlay" id="overlay">
+        <div class="model" id="message-model" style="display:none;">
+            <img src="./../../img/vehiclecheckoutimg/close.png" id="close" onclick="closeModel()"/>
+            <h3 class="send-msg-text">Send Message</h3>
+            <form class="form-container">
+                <input type="text" placeholder="Enter your name" class="form-ip"/>
+                <input type="text" placeholder="Enter your email" class="form-ip"/>
+                <input type="text" placeholder="Enter your message" class="form-ip"/>
+            </form>
+            <div class="form-btn">
+                <button class="send-btn" id="message" onclick="closeModel(),alertMessage()"  >Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+    <footer>
+        <div class="footer-section">
+    
+          <div class="popular-locations">
+            <h2 class="footer-heading-style">Popular Locations</h2>
+            <div class="locations footer-anchor-style">
+              <a href="#" class="anchor-style">Mumbai</a>
+              <a href="#" class="anchor-style">Nagpur</a>
+              <a href="#" class="anchor-style">Pune</a>
+              <a href="#" class="anchor-style">Chennai</a>
+            </div>
+          </div>
+          
+          <div class="trending-locations">
+            <h2 class="footer-heading-style">Trending Locations</h2>
+            <div class="locations footer-anchor-style">
+              <a href="#" class="anchor-style"> Bhubaneshwar</a>
+              <a href="#" class="anchor-style"> Hyderabad </a>
+              <a href="#" class="anchor-style">Chandigarh</a>
+              <a href="#" class="anchor-style"> Nashik</a>
+            </div>
+          </div>
+    
+          <div class="about-us">
+            <h2 class="footer-heading-style">About Us</h2>
+            <div class="locations footer-anchor-style">
+              <a href="#" class="anchor-style">Tech@EcoSwap</a>
+            </div>
+          </div>
+    
+          <div class="popular-locations">
+            <h2 class="footer-heading-style">EcoSwap</h2>
+            <div class="site-about footer-anchor-style">
+              <a href="#" class="anchor-style">Blog</a>
+              <a href="#" class="anchor-style">Help</a>
+              <a href="#" class="anchor-style">Sitemap</a>
+              <a href="#" class="anchor-style">Legal & Privacy information</a>
+            </div>
+          </div>
+    
+          <div class="popular-locations">
+            <h1 class="footer-heading-style">Follow Us</h1>
+            <div class="social-icons">
+              <i class="fa-brands fa-instagram footer-icon-style"></i>
+              <i class="fa-brands fa-facebook footer-icon-style"></i>
+              <i class="fa-brands fa-twitter footer-icon-style"></i>
+              <i class="fa-brands fa-linkedin footer-icon-style"></i>
+              <i class="fa-brands fa-youtube footer-icon-style"></i>
+            </div>
+          </div>
+    
+        </div>
+             <hr class="plane-line">
+             <p class="copy-right">All rights reserved © 2024 EcoSwap.</p>
+      </footer>
+     
+
+
+
+        <script src="https://kit.fontawesome.com/9e04791103.js" crossorigin="anonymous"></script>
+      <script>
+        const slide = document.getElementById('cover-img');
+        const img = ["./../../img/vehiclecheckoutimg/maruitsuzuki1.jpg",
+                      "./../../img/vehiclecheckoutimg/maruitsuzuki2.jpg",
+                       "./../../img/vehiclecheckoutimg/maruitsuzuki3.jpg",
+                      "./../../img/vehiclecheckoutimg/maruitsuzuki4.jpg",
+                      "./../../img/vehiclecheckoutimg/maruitsuzuki5.jpg",
+                      "./../../img/vehiclecheckoutimg/maruitsuzuki6.jpg",
+                        "./../../img/vehiclecheckoutimg/maruitsuzuki7.jpg",
+
+                    ];
+        let index = 0;
+
+        function next() {
+            if (index < img.length - 1) {
+                index++;
+            } else {
+                index = 0;
+            }
+            slide.src = img[index];
+        }
+
+        function back() {
+            if (index > 0) {
+                index--;
+            } else {
+                index = img.length - 1;
+            }
+            slide.src = img[index];
+        }
+        setInterval(next, 5000);
+
+
+
+       function openModel(type) {
+        const overlayEle = document.getElementById('overlay');
+        const messageModel = document.getElementById('message-model');
+        
+        overlayEle.style.display = "flex";
+        
+        if (type === 'message') {
+            messageModel.style.display = "block";
+        }
+    }
+
+    function closeModel() {
+        const overlayEle = document.getElementById('overlay');
+        overlayEle.style.display = "none";
+    }
+
+    function alertMessage(){
+        alert("Message send Successfully !!");
+    }
+      </script>
+
+
+
+    
+</body>
+</html>
