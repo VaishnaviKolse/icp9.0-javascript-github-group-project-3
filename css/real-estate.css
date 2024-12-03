@@ -250,11 +250,11 @@
 }
 
 .re-sub-container{
-    width: 420px;
+    width: 400px;
     padding: 20px;
     border-radius: 16px;
     background-color: #ecf0f1;
-
+    margin-right: 13px;
 }
 
 .re-drop-down{
