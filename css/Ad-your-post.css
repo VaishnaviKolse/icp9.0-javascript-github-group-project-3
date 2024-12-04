@@ -51,6 +51,8 @@
       font-size: 1.5em;
       margin-top: 10px;
       margin-left: 180px;
+      
+      
     }
   
     .main {
@@ -110,52 +112,6 @@
   
   }
   
-  /* product card styling End ************************************ */
+ 
   
-  .Category {
-      margin-left: 30px;
-  }
-  
-  .heading {
-      margin-left: 500px;
-      margin-top: 40px;
-  }
-  
-  .main {
-      border: 1px solid black;
-      height: 500px;
-      width: 500px;
-      margin: 10px auto;
-      margin-top: 30px;
-  }
-  
-  .select-wrapper {
-      position: relative;
-      width: 100%;
-      height: 50px;
-      cursor: pointer;
-  }
-  
-  .select {
-      width: 100%;
-      height: 50px;
-      font-size: 18px;
-      padding-left: 35px;
-      border: 1px solid #ccc;
-      cursor: pointer;
-  }
-  
-  .select-wrapper i {
-      position: absolute;
-      left: 10px;
-      top: 50%;
-  }
-  
-  .a {
-      font-size: 20px;
-  }
-  
-  .fa-xmark {
-      margin-left: 90;
-  }
   
