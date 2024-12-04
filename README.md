@@ -2,9 +2,7 @@
 
 EcoSwap is an online marketplace designed for sustainability and savvy shopping. It’s where pre-loved treasures find new homes, and where buyers can discover unique, high-quality used products at unbeatable prices. From vintage homes and electronics to fashion and collectibles, EcoSwap offers a wide range of items, making it easy to buy and sell with confidence. Join our community of eco-conscious consumers and start swapping today, turning one person's old into another's gold! 🌱💼
 </br>
-</hr>
-![Home Page](./img/home-img.png)
-</hr>
+
 </br>
 
 ## Key Features
@@ -37,7 +35,6 @@ Ecoswap is built using modern web development technologies:
 - *Frontend*: HTML, CSS, JavaScript
 - *Version Control & Collaboration*: Git and GitHub
 
----
 
 ## How to Use
 
@@ -106,7 +103,7 @@ Here's your updated *Project Members and Contributions* section with the correct
     
 </tr>
 </table>
----
+
 
 Let me know if you need any further changes!
 ## Contributions
