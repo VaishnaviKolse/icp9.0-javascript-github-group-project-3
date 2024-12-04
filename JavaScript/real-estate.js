@@ -153,3 +153,24 @@ function filterByLocation(location) {
         }
     });
 }
+
+
+
+
+// Filter based on clicked categories
+
+function filterByCategory(category) {
+    
+    const cardElement = document.querySelectorAll('.product-card');
+    
+    cardElement.forEach(card => {
+        
+        const productTitle = card.querySelector('.product-title').textContent;
+
+        if (productTitle.includes(category)) {
+            card.style.display = 'block';  
+        } else {
+            card.style.display = 'none';  
+        }
+    });
+}
