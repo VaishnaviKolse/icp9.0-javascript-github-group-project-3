@@ -8,6 +8,10 @@
 
 }
 
+a{
+  text-decoration: none;
+}
+
 .bold{
     font-weight: bold;
 }
@@ -250,16 +254,16 @@
 }
 
 .re-sub-container{
-    width: 400px;
+    width: 320px;
     padding: 20px;
     border-radius: 16px;
     background-color: #ecf0f1;
-    margin-right: 13px;
+    margin-right: 4px;
 }
 
 .re-drop-down{
     height: 15px;
-    margin-left: 110px;
+    margin-left: 50px;
     cursor: pointer;
 }
 
