@@ -1,91 +1,76 @@
-const loginSection = document.getElementById('login-section');
-const resetSection = document.getElementById('reset-section');
-const registrationSection = document.getElementById('registration-section');
-const forgotPasswordLink = document.getElementById('forgot-password-link');
-const registerLink = document.getElementById('register-link');
-const backToLogin = document.getElementById('back-to-login');
-const backToLoginFromRegister = document.getElementById('back-to-login-from-register');
-const resetForm = document.getElementById('reset-form');
-const loginForm = document.getElementById('login-form');
-const registrationForm = document.getElementById('registration-form');
+// Toggle to reset password form
+document.getElementById('forgot-password-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('login-container').style.display = 'none';
+  document.getElementById('reset-section').style.display = 'block';
+});
+
+// Toggle to registration form
+document.getElementById('register-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('login-container').style.display = 'none';
+  document.getElementById('registration-section').style.display = 'block';
+});
+
+// Back to login from reset password
+document.getElementById('back-to-login').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('reset-section').style.display = 'none';
+  document.getElementById('login-container').style.display = 'block';
+});
+
+// Back to login from registration
+document.getElementById('back-to-login-from-register').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('registration-section').style.display = 'none';
+  document.getElementById('login-container').style.display = 'block';
+});
+
+// Form submission for login, reset password, and registration (can be modified based on your logic)
+document.getElementById('login-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  // Handle login logic here
+});
+
+document.getElementById('reset-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  // Handle password reset logic here
+});
+
+document.getElementById('registration-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  // Handle registration logic here
+});
+
+// Toggle password visibility for login form
 const togglePassword = document.getElementById('toggle-password');
 const passwordInput = document.getElementById('password');
-const regPasswordInput = document.getElementById('reg-password');
-const confirmPasswordInput = document.getElementById('confirm-password');
-const googleSignInBtn = document.getElementById('google-signin-btn');
-
+    
 togglePassword.addEventListener('click', () => {
-  passwordInput.type = (passwordInput.type === 'password') ? 'text' : 'password';
-  togglePassword.innerHTML = (passwordInput.type === 'password') ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
+  const type = passwordInput.type === 'password' ? 'text' : 'password';
+  passwordInput.type = type;
+  togglePassword.classList.toggle('fa-eye-slash');
+  togglePassword.classList.toggle('fa-eye');
 });
 
-forgotPasswordLink.addEventListener('click', () => {
-  loginSection.style.display = 'none';
-  resetSection.style.display = 'block';
-});
+// Removed the eye toggle for registration password
+// const toggleRegPassword = document.getElementById('toggle-reg-password');
+// const regPasswordInput = document.getElementById('reg-password');
+    
+// toggleRegPassword.addEventListener('click', () => {
+//   const type = regPasswordInput.type === 'password' ? 'text' : 'password';
+//   regPasswordInput.type = type;
+//   toggleRegPassword.classList.toggle('fa-eye-slash');
+//   toggleRegPassword.classList.toggle('fa-eye');
+// });
 
-registerLink.addEventListener('click', () => {
-  loginSection.style.display = 'none';
-  registrationSection.style.display = 'block';
-});
-
-backToLogin.addEventListener('click', () => {
-  resetSection.style.display = 'none';
-  loginSection.style.display = 'block';
-});
-
-backToLoginFromRegister.addEventListener('click', () => {
-  registrationSection.style.display = 'none';
-  loginSection.style.display = 'block';
-});
-
-resetForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('Password reset link sent to your email!');
-  resetSection.style.display = 'none';
-  loginSection.style.display = 'block';
-});
-
-registrationForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (regPasswordInput.value !== confirmPasswordInput.value) {
-    alert("Passwords don't match.");
-    return;
-  }
-  localStorage.setItem('userEmail', document.getElementById('reg-email').value);
-  localStorage.setItem('userPassword', regPasswordInput.value);
-  alert('Registration successful! You can now log in.');
-  registrationSection.style.display = 'none';
-  loginSection.style.display = 'block';
-});
-
-loginForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const email = document.getElementById('email').value;
-  const password = passwordInput.value;
-  const storedEmail = localStorage.getItem('userEmail');
-  const storedPassword = localStorage.getItem('userPassword');
-
-  if (email === storedEmail && password === storedPassword) {
-    alert('Login successful!');
-  } else {
-    alert('Invalid email or password. Please try again.');
-  }
-});
-
-google.accounts.id.initialize({
-  client_id: 'YOUR_GOOGLE_CLIENT_ID',
-  callback: handleGoogleSignIn,
-});
-
-google.accounts.id.renderButton(googleSignInBtn, {
-  theme: 'outline',
-  size: 'large',
-  text: 'signin_with',
-  shape: 'rectangular',
-});
-
-function handleGoogleSignIn(response) {
-  alert('Google Sign-In successful!');
-  console.log(response.credential);
-}
+// Removed the eye toggle for confirm password
+// const toggleConfirmPassword = document.getElementById('toggle-confirm-password');
+// const confirmPasswordInput = document.getElementById('confirm-password');
+    
+// toggleConfirmPassword.addEventListener('click', () => {
+//   const type = confirmPasswordInput.type === 'password' ? 'text' : 'password';
+//   confirmPasswordInput.type = type;
+//   toggleConfirmPassword.classList.toggle('fa-eye-slash');
+//   toggleConfirmPassword.classList.toggle('fa-eye');
+// });
