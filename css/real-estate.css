@@ -8,6 +8,10 @@
 
 }
 
+a{
+  text-decoration: none;
+}
+
 .bold{
     font-weight: bold;
 }
