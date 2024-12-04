@@ -76,7 +76,7 @@ Here's your updated **Project Members and Contributions** section with the corre
   GitHub: [Surajghogare80](https://github.com/Surajghogare80)
 - **Vandita Satarde**: Real Estate products main page  
   GitHub: [vandita-satarde](https://github.com/vandita-satarde)
-- **Vaishnapuvi Kolse**: Real Estate product checkout pages  
+- **Vaishnavi Kolse**: Real Estate product checkout pages  
   GitHub: [VaishnaviKolse](https://github.com/VaishnaviKolse)
 - **Rasika Shete**: Vehicles main page  
   GitHub: [sheterasika](https://github.com/sheterasika/)
