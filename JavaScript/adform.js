@@ -9,14 +9,18 @@ function postAd() {
 
     if (proTitle && proLocation && proDiscription && proPrice && proimg) {
         
-        const imagePath = `./img/${proimg.name}`;
+         const reader = new FileReader();
+
+         reader.onload = function() {
+
+          const encodeImg = reader.result;
 
         const productCard = {
             title: proTitle,
             location: proLocation,
             description: proDiscription,
             price: proPrice,
-            image: imagePath, 
+            image: encodeImg, 
         };
 
 
@@ -26,12 +30,12 @@ function postAd() {
 
         localStorage.setItem('products', JSON.stringify(products));
 
-        
-        URL.revokeObjectURL(imageURL);
-
         formClear();
+        alert("Product added successfully !");
+      };
 
-        alert("Form submitted successfully!");
+       reader.readAsDataURL(proimg);
+
     } else {
 
         alert("Please fill all product details!");
@@ -39,7 +43,6 @@ function postAd() {
 }
 
 function formClear() {
-
     document.getElementById('title').value = '';
     document.getElementById('location').value = '';
     document.getElementById('description').value = '';

@@ -1,238 +1,224 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+ .{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.container {
+body {
+  background-color: #f9f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
 }
 
-#login-section, #reset-section, #registration-section {
-  background-color: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.wrapper {
   width: 100%;
-  max-width: 450px;
-  margin: 10px 0;
+  max-width: 500px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  transform: translateY(10px);
 }
 
-h2 {
-  color: #2c3e50;
+.wrapper:hover {
+  transform: translateY(0);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 25px;
   text-align: center;
-  margin-bottom: 30px;
+  color: #2c3e50;
+  transition: font-size 0.3s ease;
 }
 
-.form-group {
+.subheading {
+  font-size: 16px;
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 25px;
+}
+
+.input-group {
   margin-bottom: 20px;
 }
 
 label {
-  font-size: 14px;
-  color: #2c3e50;
+  font-size: 15px;
+  color: #34495e;
+  margin-bottom: 8px;
+  display: block;
 }
 
 input {
   width: 100%;
-  padding: 12px;
-  margin-top: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  color: #2c3e50;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #34495e;
+  transition: all 0.3s ease;
 }
 
 input:focus {
-  border-color: #3498db;
   outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
 }
 
-.password-container {
-  position: relative;
-}
-
-.password-container input {
-  padding-right: 14px;
-}
-
-#toggle-password {
-  cursor: pointer;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: #3498db;
-}
-
-#toggle-password:hover {
-  color: #2980b9;
-}
-
-a {
-  font-size: 13px;
-  color: #3498db;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.btn {
+.submit-btn {
   width: 100%;
-  padding: 12px;
+  padding: 16px;
   background-color: #3498db;
-  color: white;
-  font-size: 16px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #fff;
   cursor: pointer;
+  margin-top: 10px;
   transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
 
-.btn:hover {
+.submit-btn:hover {
   background-color: #2980b9;
-  transform: translateY(-2px);
 }
 
-.btn:active {
+.submit-btn:active {
   background-color: #2980b9;
-  transform: translateY(0);
+  transform: scale(0.98);
 }
 
-.icon {
-  margin-right: 8px;
+.action-links {
+  text-align: center;
+  margin-top: 15px;
 }
 
-.g_id_signin {
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.g_id_signin button {
-  width: 100%;
-  padding: 12px;
-  background-color: #4285F4;
-  border: none;
-  color: white;
+.action-links a {
   font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #3498db;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: text-decoration 0.3s ease, color 0.3s ease;
 }
 
-.g_id_signin button:hover {
-  background-color: #357ae8;
+.action-links a:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 450px;
+  padding: 10px 40px 10px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 69%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+}
+
+.form-section {
+  display: none;
 }
 
 #reset-section, #registration-section {
-  display: none;
+  padding: 25px;
+}
+
+#reset-section h1, #registration-section h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
 }
 
 #back-to-login, #back-to-login-from-register {
   display: block;
   text-align: center;
-  margin-top: 10px;
-  font-size: 12px;
-  color: #3498db;
-}
-
-.show-login #login-section {
-  display: block;
-}
-
-.show-reset #reset-section {
-  display: block;
-}
-
-.show-register #registration-section {
-  display: block;
-}
-
-#forgot-password-link, #register-link {
-  display: block;
-  margin-top: 15px;
-  text-align: center;
-}
-
-#forgot-password-link {
-  font-size: 13px;
-  color: #3498db;
-}
-
-#register-link {
-  font-size: 13px;
-  color: #3498db;
-}
-
-.g_id_signin {
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
-}
-
-.g_id_signin button {
-  padding: 12px;
-  background-color: #4285F4;
-  border: none;
-  color: white;
   font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
+  color: #3498db;
+  text-decoration: none;
 }
 
-.g_id_signin button:hover {
-  background-color: #357ae8;
+#back-to-login:hover, #back-to-login-from-register:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 25px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 16px;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 15px;
+  .wrapper {
+    max-width: 450px;
+    padding: 35px;
   }
 
-  #login-section, #reset-section, #registration-section {
-    padding: 25px;
-    max-width: 100%;
+  h1 {
+    font-size: 22px;
   }
 
-  input, .btn, .g_id_signin button {
+  .submit-btn {
+    font-size: 16px;
+  }
+
+  .input-group {
+    margin-bottom: 18px;
+  }
+
+  .action-links a {
     font-size: 14px;
-    padding: 10px;
-  }
-
-  h2 {
-    font-size: 18px;
   }
 }
 
 @media (max-width: 600px) {
-  .container {
-    padding: 10px;
-  }
-
-  #login-section, #reset-section, #registration-section {
-    width: 100%;
+  .wrapper {
     max-width: 100%;
+    padding: 20px;
   }
 
-  .btn {
-    padding: 10px;
+  h1 {
+    font-size: 20px;
   }
 
-  h2 {
-    font-size: 16px;
+  .submit-btn {
+    font-size: 14px;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  .action-links a {
+    font-size: 12px;
   }
 }

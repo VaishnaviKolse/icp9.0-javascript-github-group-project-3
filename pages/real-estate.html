@@ -55,7 +55,7 @@
 
 
         <div class="logo-box">
-            <h2 class="logo">EcoSwap</h2>
+            <a href="../index.html"><h2 class="logo" id="logo">EcoSwap</h2></a>
         </div>
         <div class="select-location-container">
             <select name="select location" id="select-option">
@@ -79,16 +79,20 @@
         </div>
 
         <div class="product-sell-box">
-            <button class="sell-product-btn">
-             <i class="fa-solid fa-plus sell-icon"></i>
-                SELL
-            </button>
+            <a href="./post-your-Ad.html">
+              <button class="sell-product-btn">
+                <i class="fa-solid fa-plus sell-icon"></i>
+                   SELL
+               </button>
+            </a>
         </div>
 
         <div class="user-profile">
-            <i class="fa-regular fa-user profile-img" ></i>
+            <a href="login.html">
+              <i class="fa-regular fa-user profile-img" ></i>
+            </a>
         </div>
-        
+      
     </div>
 
     <!-- sub-navbar ----------------------------------------------------->
@@ -96,15 +100,15 @@
     <div class="sub-navbar">
           <div class="navbar-pages-container">
             <div class="vehicals-page">
-                <p class="style-p"><a href="#" class="sub-nav-anchor">Vehicals : Bike & Car & Scooter</a></p>
+                <p class="style-p"><a href="./vehicle.html" class="sub-nav-anchor" style="color: black; text-decoration: none;">Vehicals : Bike & Car & Scooter</a></p>
             </div>
     
             <div class="RealEtate-page">
-                <p class="style-p"><a href="./real-estate.html" class="sub-nav-anchor">RealEtate : Houses & Apartments</a></p>
+                <p class="style-p"><a href="./real-estate.html" class="sub-nav-anchor" style="color: black; text-decoration: none;">RealEstate : Houses & Apartments</a></p>
             </div>
     
             <div class="Electronics-page">
-                <p class="style-p"><a href="#" class="sub-nav-anchor">Electronics : Smart Phone & Laptop & Tablet</a></p>
+                <p class="style-p"><a href="./electronics.html/laptops.html" class="sub-nav-anchor" style="color: black; text-decoration: none;">Electronics : Smart Phone & Laptop & Tablet</a></p>
             </div>
           </div>
     </div>
@@ -133,18 +137,21 @@
                 <span class="bold">CATEGORIES</span>
                 <img src="./../img/real-estate-images/down-arrow.png" class="re-drop-down" id="c-drop-down" onclick="cToggleDropDown()">
                 <br/><br/>
-                <p class="re-categories-subtext bold" id="c-categories-subtext" >For Sale: Houses & Apartments</p>
+                <p class="re-categories-subtext bold" id="c-categories-subtext" >Houses, Apartments & Lands</p>
                 <div class="re-categories-info" id="c-categories-info">
                     <p class="bold">— &nbsp; &nbsp;All Categories</p>
                     <br/>
                     <p class="re-properties">— &nbsp; &nbsp;Properties</p>
                     <p class="re-sub-properties-section">
-                        <p class="re-sub-properties" onclick="forSale()">For Sale: Houses & Apartments</p>
-                        <p class="re-sub-properties" onclick="forRent()">For Rent: Houses & Apartments</p>
-                        <p class="re-sub-properties" onclick="lands()">Lands & Plots</p>
+                        <p class="re-sub-properties" onclick="filterByCategory('Homes')">Homes</p>
+                        <p class="re-sub-properties" onclick="filterByCategory('Apartments')">Apartments</p>
+                        <p class="re-sub-properties" onclick="filterByCategory('Lands')">Lands</p>
                     </p>
                 </div>
             </div>
+
+            <br><hr><br>
+            
             <div class="re-location-section">
               <span class="bold">LOCATIONS</span>
               <img src="./../img/real-estate-images/down-arrow.png" class="re-drop-down" id="l-drop-down" onclick="lToggleDropDown()">
@@ -163,10 +170,10 @@
         <div class="re-card-container">
           <div class="product-card">
             <div class="product-image">
-              <img src="./../img/Oceanview Villas.jpeg" alt="Product Image">
+              <img src="./../img/realestatecheckout/realestatecheckout/villa.png" alt="Product Image">
             </div>
             <div class="product-details">
-              <h2 class="product-title">Oceanview Villas</h2>
+              <h2 class="product-title">Oceanview Villa Homes</h2>
               <p class="product-location">
                 <i class="fa fa-map-marker"></i> Vasco da Gama, Goa
               </p>
@@ -175,7 +182,9 @@
               </p>
               <div class="product-information">
                 <span class="product-price">₹ 8,00,099.99</span>
-                <button class="btn secondary-btn">View Details</button>
+                <a href="realestatecheckout/realestate1.html">
+                  <button class="btn secondary-btn">View Details</button>
+                </a>  
               </div>
             </div>
           </div>
@@ -193,13 +202,15 @@
               </p>
               <div class="product-information">
                 <span class="product-price">₹ 30099.99</span>
-                <button class="btn secondary-btn">View Details</button>
+                <a href="realestatecheckout/realestate2.html">
+                  <button class="btn secondary-btn">View Details</button>
+                </a>  
               </div>
             </div>
           </div>
           <div class="product-card">
                 <div class="product-image">
-                  <img src="./../img/real-estate-images/apartment-1.jpg" alt="Product Image">
+                  <img src="./../img/realestatecheckout/aparments/aparment1.jpg" alt="Product Image">
                 </div>
                 <div class="product-details">
                   <h2 class="product-title">Mountain Retreat Apartments</h2>
@@ -211,7 +222,9 @@
                   </p>
                   <div class="product-information">
                     <span class="product-price">₹ 15,00,000.99</span>
-                    <button class="btn secondary-btn">View Details</button>
+                    <a href="realestatecheckout/realestate3.html">
+                      <button class="btn secondary-btn">View Details</button>
+                    </a>  
                   </div>
                 </div>
           </div>
@@ -220,23 +233,25 @@
                   <img src="./../img/real-estate-images/apartment-2.jpg" alt="Product Image">
                 </div>
                 <div class="product-details">
-                  <h2 class="product-title">City Heights Residences</h2>
+                  <h2 class="product-title">City Heights Apartments</h2>
                   <p class="product-location">
                     <i class="fa fa-map-marker"></i> Nagpur, Maharashtra
                   </p>
                   <p class="product-description">
                     Modern high-rise apartments with a great view of the city skyline and all essential amenities.                  <div class="product-information">
                     <span class="product-price">₹ 20,00,000.99</span>
-                    <button class="btn secondary-btn">View Details</button>
+                    <a href="realestatecheckout/realestate4.html">
+                      <button class="btn secondary-btn">View Details</button>
+                    </a>  
                   </div>
                 </div>
           </div>
           <div class="product-card">
                 <div class="product-image">
-                  <img src="./../img/real-estate-images/land-1.avif" alt="Product Image">
+                  <img src="./../img/realestatecheckout/lands/land1.jpg" alt="Product Image">
                 </div>
                 <div class="product-details">
-                  <h2 class="product-title">Agricultural Land in Mumbai</h2>
+                  <h2 class="product-title">Agricultural Lands in Mumbai</h2>
                   <p class="product-location">
                     <i class="fa fa-map-marker"></i> Mumbai, Maharashtra
                   </p>
@@ -245,16 +260,18 @@
                   </p>
                   <div class="product-information">
                     <span class="product-price">₹ 50,00,000.99</span>
-                    <button class="btn secondary-btn">View Details</button>
+                    <a href="realestatecheckout/realesate5.html">
+                      <button class="btn secondary-btn">View Details</button>
+                    </a>  
                   </div>
                 </div>
           </div>
           <div class="product-card">
                 <div class="product-image">
-                  <img src="./../img/real-estate-images/land-2.jpg" alt="Product Image">
+                  <img src="./../img/realestatecheckout/lands/plot1.jpg" alt="Product Image">
                 </div>
                 <div class="product-details">
-                  <h2 class="product-title">Residential Plot in Goa</h2>
+                  <h2 class="product-title">Residential Lands in Goa</h2>
                   <p class="product-location">
                     <i class="fa fa-map-marker"></i> Benaulim, South Goa
                   </p>
@@ -263,7 +280,9 @@
                   </p>
                   <div class="product-information">
                     <span class="product-price">₹ 35,00,000.99</span>
-                    <button class="btn secondary-btn">View Details</button>
+                    <a href="realestatecheckout/realesate6.html">
+                      <button class="btn secondary-btn">View Details</button>
+                    </a>  
                   </div>
                 </div>
           </div>

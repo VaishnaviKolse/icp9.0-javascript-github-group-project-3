@@ -462,3 +462,59 @@
 
 
 
+
+footer{
+    background-color:  #2c3e50;
+  }
+
+  .footer-section{
+    display: flex;
+    justify-content: space-around;
+    background-color:  #2c3e50;
+    padding: 15px 10px;
+    padding-top: 35px;
+  }
+
+  .footer-anchor-style{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+ .anchor-style{
+  text-decoration: none;
+  color: #ccc;
+  padding-bottom: 3px;
+ }
+
+ .footer-heading-style{
+  
+  color: #ffffff;
+
+  }
+
+ .anchor-style:hover{
+  color: #ffffff;
+ }
+
+ .footer-icon-style{
+  color: #ccc;
+  padding: 4px;
+  font-size: 25px;
+  cursor: pointer;
+
+ }
+  
+ .footer-icon-style:hover{
+  color: #ffffff;
+ }
+
+ .copy-right{
+  color: #ccc;
+  text-align: center;
+  padding: 4px;
+ }
+
+
+
+
