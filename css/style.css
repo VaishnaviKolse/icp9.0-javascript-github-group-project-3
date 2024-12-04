@@ -356,7 +356,120 @@
 }
 
 .secondary-btn:hover {
+
+  background-color: #2980b9;
+}
+  /* product card styling End ************************************/
+.Category{
+  margin-left: 30px;
+}
+
+.heading{
+ margin-left: 500px;
+ margin-top: 40px;
+}
+.main{
+  border: 1px solid black;
+  height: 500px;
+  width: 500px;
+  margin: 10px auto;
+  margin-top: 30px;
+}
+
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+.select {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  padding-left: 35px;
+  border: 1px solid #ccc;
+  
+  cursor: pointer;
+  
+}
+.select-wrapper i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  
+}
+.a {
+  font-size: 20px;
+}
+.fa-xmark{
+  margin-left: 90;
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+  
+  .heading {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-left: 180px;
+  }
+
+  .main {
+    padding: 10px;
+    height: 630px;
+    margin-top: 30px;
+
+  }
+
+  .row {
+    margin-bottom: 15px;
+  }
+
+  .select-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .select-wrapper select {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 10px;
+  }
+
+  .select-wrapper i {
+    font-size: 18px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for tablets and small laptops */
+  
+  .heading {
+    font-size: 1.8em;
+    margin-left: 300px;
+    
+  
+    
+    
+  }
+
+  .select-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .select-wrapper select {
+    max-width: 250px;
+  }
+
+  .select-wrapper i {
+    font-size: 20px;
+  }
+
     background-color: #2980b9;
+
 }
 
 /* product card styling End ************************************ */
