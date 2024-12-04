@@ -1,186 +1,238 @@
-/* General Body Styles */
 body {
   font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
   margin: 0;
   padding: 0;
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f4f4f9;
-  color: #2c3e50; /* Primary text color */
+  min-height: 100vh;
+  padding: 20px;
+  flex-direction: column;
 }
 
-/* Container */
-.container {
-  background: #ffffff;
+#login-section, #reset-section, #registration-section {
+  background-color: white;
   padding: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
+  margin: 10px 0;
 }
 
-/* Headings */
 h2 {
-  margin-bottom: 20px;
-  color: #2c3e50; /* Primary text color */
+  color: #2c3e50;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Form Group */
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 label {
-  display: block;
   font-size: 14px;
-  margin-bottom: 5px;
-  color: #2c3e50; /* Primary text color */
+  color: #2c3e50;
 }
 
-/* Input Container Styles */
-.input-box,
-.password-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: #fff;
-  margin-bottom: 15px;
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #2c3e50;
 }
 
-/* Input Fields */
-.input-box input,
-.password-box input {
-  flex: 1;
-  border: none;
+input:focus {
+  border-color: #3498db;
   outline: none;
-  padding: 10px;
-  font-size: 14px;
-  color: #2c3e50; /* Primary text color */
 }
 
-.input-box input::placeholder,
-.password-box input::placeholder {
-  color: #7f8c8d; /* Secondary text color */
+.password-container {
+  position: relative;
 }
 
-.input-box input:focus,
-.password-box input:focus {
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  border-color: #007BFF;
+.password-container input {
+  padding-right: 14px;
 }
 
-/* Icons Inside Inputs */
-.input-box .input-icon,
-.password-box .toggle-password {
-  margin-left: 10px;
+#toggle-password {
   cursor: pointer;
-  color: #7f8c8d; /* Secondary text color */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #3498db;
 }
 
-.input-box .input-icon:hover,
-.password-box .toggle-password:hover {
-  color: #007BFF;
+#toggle-password:hover {
+  color: #2980b9;
 }
 
-/* Buttons */
-button.btn {
-  background-color: #3498db; /* Primary blue */
+a {
+  font-size: 13px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
   color: white;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 10px;
-  border: none;
-  margin-top: 10px;
-  border-radius: 8px;
-  width: 100%;
-  height: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-button.btn:hover {
-  background-color: #217dbb; /* Darker blue for hover */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-}
-
-/* Social Buttons */
-.social-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 5px;
   font-size: 16px;
-  font-weight: bold;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  color: #ffffff;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
 
-.google {
-  background-color: #db4437;
+.btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
 }
 
-.google:hover {
-  background-color: #a73a2f;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.btn:active {
+  background-color: #2980b9;
+  transform: translateY(0);
 }
 
-.facebook {
-  background-color: #4267B2;
-}
-
-.facebook:hover {
-  background-color: #365899;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Social Button Icons */
-.google i,
-.facebook i {
+.icon {
   margin-right: 8px;
 }
 
-/* Links */
-.links {
+.g_id_signin {
+  width: 100%;
+  margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.g_id_signin button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4285F4;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.g_id_signin button:hover {
+  background-color: #357ae8;
+}
+
+#reset-section, #registration-section {
+  display: none;
+}
+
+#back-to-login, #back-to-login-from-register {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #3498db;
+}
+
+.show-login #login-section {
+  display: block;
+}
+
+.show-reset #reset-section {
+  display: block;
+}
+
+.show-register #registration-section {
+  display: block;
+}
+
+#forgot-password-link, #register-link {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#forgot-password-link {
+  font-size: 13px;
+  color: #3498db;
+}
+
+#register-link {
+  font-size: 13px;
+  color: #3498db;
+}
+
+.g_id_signin {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
-.links a {
-  font-size: 14px;
-  color: #007BFF; /* Primary link color */
-  text-decoration: none;
-  transition: color 0.3s ease;
+.g_id_signin button {
+  padding: 12px;
+  background-color: #4285F4;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
 }
 
-.links a:hover {
-  color: #0056b3; /* Darker blue on hover */
+.g_id_signin button:hover {
+  background-color: #357ae8;
 }
 
-/* Icons in Links */
-.links .icon {
-  margin-right: 5px;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-  .links {
-    flex-direction: column;
-    align-items: center;
+  .container {
+    padding: 15px;
   }
 
-  .links a {
-    margin-bottom: 10px;
+  #login-section, #reset-section, #registration-section {
+    padding: 25px;
+    max-width: 100%;
+  }
+
+  input, .btn, .g_id_signin button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  #login-section, #reset-section, #registration-section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .btn {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 16px;
   }
 }
