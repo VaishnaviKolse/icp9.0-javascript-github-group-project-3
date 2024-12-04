@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSwap</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="../JavaScript/contact.js"></script>
+    <link rel="icon" href="./../img/fav_icons/fav_icon3.png">
+    <script src="https://kit.fontawesome.com/9e04791103.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+
+      <div class="sidedar-container">
+
+        <i class="fa-solid fa-bars menu-icon" id="menu-icon" onclick="openSideBar()"></i>
+        <div class="side-bar" id="side-bar">
+          <i class="fa-solid fa-xmark close-icon" onclick="closeIcon()"></i>
+    
+          <div class="item" id="first-item">
+            <i class="fa-solid fa-user icon-style"></i>
+            <h3 class="item-name">Profile</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-brands fa-sellsy icon-style"></i>
+            <h3 class="item-name">Start Selling</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-solid fa-credit-card icon-style"></i>
+            <h3 class="item-name">My ADS</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-solid fa-tag icon-style"></i>
+            <h3 class="item-name">Select Language</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-brands fa-rocketchat icon-style"></i>
+            <h3 class="item-name">Chats</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-solid fa-headset icon-style"></i>
+            <h3 class="item-name">Help</h3>
+          </div>
+    
+        </div>
+    
+      </div>
+
+        <div class="logo-box">
+            <h2 class="logo">EcoSwap</h2>
+        </div>
+        <div class="select-location-container">
+            <select name="select location" id="select-option">
+                <option>Select Location</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Goa">Goa</option>
+            </select>
+        </div>
+        <div class="product-search-container">
+            <input type="text" class="product-search-input" id="product-search-input">
+            <i class="fa-solid fa-magnifying-glass search-icon" onclick="searchProduct()"></i>
+        </div>
+        <div class="select-language-contaiiner">
+            <select id="select-language">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+        </div>
+
+        <div class="product-sell-box">
+            <button class="sell-product-btn">
+             <i class="fa-solid fa-plus sell-icon"></i>
+                SELL
+            </button>
+        </div>
+
+        <div class="user-profile">
+            <i class="fa-regular fa-user profile-img" ></i>
+        </div>
+        
+    </div>
+
+    <!-- sub-navbar ----------------------------------------------------->
+
+    <div class="sub-navbar">
+          <div class="navbar-pages-container">
+            <div class="vehicals-page">
+                <p class="style-p"><a href="./vehicle.html" class="sub-nav-anchor">Vahicles : Bike & Car & Scooter</a></p>
+            </div>
+    
+            <div class="RealEtate-page">
+                <p class="style-p"><a href="./real-estate.html" class="sub-nav-anchor">RealEtate : Houses & Apartments</a></p>
+            </div>
+    
+            <div class="Electronics-page">
+                <p class="style-p"><a href="#" class="sub-nav-anchor">Electronics : Smart Phone & Laptop & Tablet</a></p>
+            </div>
+          </div>
+    </div>
+
+  </header>
+
+  <h1 class="font-family text-centre">Contact Us</h1>
+  <div class="enquiry-container">
+    
+      <div class="typeset-container">
+
+          <div class="typeset">
+              <div class="image-container">
+                <i class="fa-regular fa-envelope"></i> 
+              </div>
+              <div class="enquiry-text font-family">
+                  <p>ecoswap@gmail.com</p>
+              </div>
+          </div>
+          
+      
+          <div class="typeset">
+              <div class="image-container">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="enquiry-text font-family">
+                  <p>+91 9087654321</p>
+              </div>
+          </div>
+
+          <div class="typeset">
+              <div class="image-container">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="enquiry-text font-family">
+                  <p>+91 9087654321</p>
+              </div>
+          </div>
+
+          <div class="typeset">
+              <div class="image-container">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="enquiry-text font-family">
+                  <p>C11, Viman Nagar,Pune, 411014.</p>
+              </div>
+          </div>
+
+
+      </div>
+
+      <div class="input-typeset" id="message">
+           <input type="text" id="name" placeholder="&nbsp; Name" class="name">
+           <input type="text" id="phone" placeholder="&nbsp; Phone Number" class="name">
+           <input type="email" id="email" placeholder="&nbsp; Email" class="name">
+           <input type="text" id="msg" placeholder="&nbsp; Message" class="message">
+           <button class="submit-btn font-family" onclick="submit()">Submit</button>
+      </div>
+
+  </div>
+
+
+  <footer>
+    <div class="footer-section">
+
+      <div class="popular-locations">
+        <h2 class="footer-heading-style">Popular Locations</h2>
+        <div class="locations footer-anchor-style">
+          <a href="#" class="anchor-style">Mumbai</a>
+          <a href="#" class="anchor-style">Nagpur</a>
+          <a href="#" class="anchor-style">Pune</a>
+          <a href="#" class="anchor-style">Chennai</a>
+        </div>
+      </div>
+      
+      <div class="trending-locations">
+        <h2 class="footer-heading-style">Trending Locations</h2>
+        <div class="locations footer-anchor-style">
+          <a href="#" class="anchor-style"> Bhubaneshwar</a>
+          <a href="#" class="anchor-style"> Hyderabad </a>
+          <a href="#" class="anchor-style">Chandigarh</a>
+          <a href="#" class="anchor-style"> Nashik</a>
+        </div>
+      </div>
+
+      <div class="about-us">
+        <h2 class="footer-heading-style">About Us</h2>
+        <div class="locations footer-anchor-style">
+          <a href="#" class="anchor-style">Tech@EcoSwap</a>
+        </div>
+      </div>
+
+      <div class="popular-locations">
+        <h2 class="footer-heading-style">EcoSwap</h2>
+        <div class="site-about footer-anchor-style">
+          <a href="#" class="anchor-style">Blog</a>
+          <a href="#" class="anchor-style">Help</a>
+          <a href="#" class="anchor-style">Sitemap</a>
+          <a href="#" class="anchor-style">Legal & Privacy information</a>
+        </div>
+      </div>
+
+      <div class="popular-locations">
+        <h1 class="footer-heading-style">Follow Us</h1>
+        <div class="social-icons">
+          <i class="fa-brands fa-instagram footer-icon-style"></i>
+          <i class="fa-brands fa-facebook footer-icon-style"></i>
+          <i class="fa-brands fa-twitter footer-icon-style"></i>
+          <i class="fa-brands fa-linkedin footer-icon-style"></i>
+          <i class="fa-brands fa-youtube footer-icon-style"></i>
+        </div>
+      </div>
+
+    </div>
+         <hr class="plane-line">
+         <p class="copy-right">All rights reserved © 2024 EcoSwap.</p>
+  </footer>
+
+  </body>
+  </html>
+
