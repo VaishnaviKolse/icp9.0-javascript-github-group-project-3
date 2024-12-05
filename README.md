@@ -72,42 +72,10 @@ The project is organized into structured directories for easy navigation, with s
 
 ---
 
-Here's your updated *Project Members and Contributions* section with the correct GitHub links for all the contributors:
+*Project Members and Contributions* section with the correct GitHub links for all the contributors:
 
----
 
-## Project Members and Contributions
 
-- *Akash Amode*: Main home page, Ad post page
-  GitHub: [AKashAMode](https://github.com/AKashAMode)
-- *Suraj Ghogare*: Electronics products main page
-  GitHub: [Surajghogare80](https://github.com/Surajghogare80)
-- *Vandita Satarde*: Real Estate products main page
-  GitHub: [vandita-satarde](https://github.com/vandita-satarde)
-- *Vaishnavi Kolse*: Real Estate product checkout pages
-  GitHub: [VaishnaviKolse](https://github.com/VaishnaviKolse)
-- *Rasika Shete*: Vehicles main page
-  GitHub: [sheterasika](https://github.com/sheterasika/)
-- *Siddi Pagire*: Vehicles product checkout pages
-  GitHub: [Miss-Siddhi-Pagire](https://github.com/Miss-Siddhi-Pagire)
-- *Kiran More*: Product ad form
-  GitHub: [kiranmore2404](https://github.com/kiranmore2404)
-- *Rushikesh Salunke*: Signup and login page
-  GitHub: [rushikeshsalunkhe01](https://github.com/rushikeshsalunkhe01)
-- *Aastha Dhongade*: Contact page
-  GitHub: [Aastha7378](https://github.com/Aastha7378)
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/AKashAMode"><img src="https://avatars.githubusercontent.com/AkashAmode?v=4" width="100px;" alt=""/><br /><sub><b>Akash Amode</b></sub></a></td>
-    <td align="center"><a href="https://github.com/Surajghogare80"><img src="https://avatars.githubusercontent.com/Surajghogare80?v=4" width="100px;" alt=""/><br /><sub><b>Suraj Ghogare</b></sub></a></td>
-    <td align="center"><a href="https://github.com/vandita-satarde"><img src="https://avatars.githubusercontent.com/vandita-satarde?v=4" width="100px;" alt=""/><br /><sub><b>Vandita Satarde</b></sub></a></td>
-    <td align="center"><a href="https://github.com/VaishnaviKolse"><img src="https://avatars.githubusercontent.com/VaishnaviKolse?v=4" width="100px;" alt=""/><br /><sub><b>Vaishnavi Kolse</b></sub></a></td>
-    <td align="center"><a href="https://github.com/sheterasika"><img src="https://avatars.githubusercontent.com/sheterasika?v=4" width="100px;" alt=""/><br /><sub><b>Rasika Shete</b></sub></a></td>
-    <td align="center"><a href="https://github.com/Miss-Siddhi-Pagire"><img src="https://avatars.githubusercontent.com/Miss-Siddhi-Pagire?v=4" width="100px;" alt=""/><br /><sub><b>Siddi Pagire</b></sub></a></td>
-    <td align="center"><a href="https://github.com/kiranmore2404"><img src="https://avatars.githubusercontent.com/kiranmore2404?v=4" width="100px;" alt=""/><br /><sub><b>Kiran More</b></sub></a></td>
-    <td align="center"><a href="https://github.com/rushikeshsalunkhe01"><img src="https://avatars.githubusercontent.com/rushikeshsalunkhe01?v=4" width="100px;" alt=""/><br /><sub><b>Rushikesh Salunke</b></sub></a></td>
-    <td align="center"><a href="https://github.com/Aastha7378"><img src="https://avatars.githubusercontent.com/Aastha7378?v=4" width="100px;" alt=""/><br /><sub><b>Aastha Dhongade</b></sub></a></td>
 
 # Ecoswap
 
