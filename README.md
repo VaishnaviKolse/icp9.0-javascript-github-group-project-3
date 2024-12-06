@@ -33,7 +33,7 @@ Ecoswap offers a variety of product categories to cater to diverse needs, includ
 
 - Optimized for mobile, tablet, and desktop devices to ensure a seamless experience.
 
----
+
 
 ## Technologies Used
 
@@ -42,7 +42,7 @@ Ecoswap is built using modern web development technologies:
 - *Frontend*: HTML, CSS, JavaScript
 - *Version Control & Collaboration*: Git and GitHub
 
----
+
 
 ## How to Use
 
@@ -127,5 +127,5 @@ Contributions to the project are welcome. Developers can:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
+
 
