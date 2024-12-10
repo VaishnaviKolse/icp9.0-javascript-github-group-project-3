@@ -59,7 +59,6 @@ Ecoswap is built using modern web development technologies:
 
    - Buyers can select products and complete their purchases through a streamlined checkout page.
 
----
 
 ## Project Structure Overview
 
@@ -70,7 +69,6 @@ The project is organized into structured directories for easy navigation, with s
 - JavaScript functionality
 - Assets (e.g., images)
 
----
 
 *Project Members and Contributions* 
 
@@ -121,7 +119,6 @@ Contributions to the project are welcome. Developers can:
 2. Create a branch for their feature.
 3. Submit a pull request after implementation.
 
----
 
 ## License
 
